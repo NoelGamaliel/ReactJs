@@ -13,13 +13,13 @@ html, body {
 }
 
 body {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .content {
-    padding: 125px 50px 50px;
+    padding: 50px;
     background: #eaeaea;
     flex-grow: 1;
 }
@@ -33,7 +33,7 @@ header {
     height: 70px;
     background-color: #f1f1f1;
     border: 10px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.423);
+    box-shadow: 0px 1px 5px rgba(4, 0, 0, 0.423);
 }
 
 #logo {
@@ -48,19 +48,51 @@ nav {
 
 ul {
     display: flex;
-    margin: 20px;
+    margin: 25px;
 }
 li {
-    margin-right: 25px;
+    margin-right: 30px;
     list-style-type: none;
 }
 a {
     text-decoration: none;
+    font-weight: bold;
+    color: #ff5100;
+    transition: 0.1s  ease;
 }
+nav a:hover {
+    border-bottom: 2px solid #ff5100;
+    padding: 3px;
+}
+
+
+
+/* toggle_btn_resp */
+.btn_toggle {
+    margin: 25px;
+    display: none;
+}
+
+
 
 footer {
     display: flex;
     padding: 20px;
     background: #f1f1f1;
+    color: #ff5100;
     text-align: center;
+}
+
+/* responsive design */
+
+@media (max-width:882px) {
+    
+    ul {
+        display: none;
+    }
+
+
+    .btn_toggle {
+        display: block;
+    }
 }
