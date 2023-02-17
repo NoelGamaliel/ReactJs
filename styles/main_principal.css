@@ -49,10 +49,15 @@ nav {
 ul {
     display: flex;
     margin: 25px;
+    gap: 2rem;
 }
 li {
     margin-right: 30px;
     list-style-type: none;
+}
+
+li i {
+    color: #ff5100;
 }
 a {
     text-decoration: none;
@@ -68,13 +73,29 @@ nav a:hover {
 
 
 /* toggle_btn_resp */
+
 .btn_toggle {
     margin: 25px;
     display: none;
 }
 
+/* Tableau de Resultat */
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,td  {
+    letter-spacing: 1px;
+    padding: 5px;
+    border: 1px solid #ff5100;
+}
 
 
+
+
+/* Footer of page */
 footer {
     display: flex;
     padding: 20px;

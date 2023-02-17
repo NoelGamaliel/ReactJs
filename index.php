@@ -17,12 +17,12 @@
                 <nav>
                     <a href="#" target="_blank" rel="noopener noreferrer" id="logo">Election Soft</a>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><i class="fa-solid fa-house"></i></li>
                         <li><a href="login_main.php">Votez ici</a></li>
                     </ul>
 
                     <div class="btn_toggle">
-                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </nav>                
             </div>
@@ -33,6 +33,23 @@
                 <hr>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni omnis blanditiis sint doloremque in placeat accusamus, deleniti sunt, quod saepe eligendi aperiam eos modi eaque voluptate assumenda voluptates labore id odio a rem aspernatur. Aliquid consectetur rerum dicta dignissimos eum illum maxime perspiciatis eius laudantium magni ipsa expedita cupiditate eveniet possimus ad, harum omnis excepturi? Voluptatibus.</p>                
+
+                <br>
+
+                <table border="0.2">
+                    <tr>
+                        <th>NumberOfCandidat</th>
+                        <th>NameOfCandidat</th>
+                    </tr>
+                    <tr>
+                        <td>Félix Tshisekedi</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Antoine Kizenga</td>
+                        <td>0</td>
+                    </tr>
+                </table>
             </div>
 
         </main>
