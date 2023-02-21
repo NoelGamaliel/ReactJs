@@ -38,15 +38,33 @@
 
                 <table border="0.2">
                     <tr>
-                        <th>NumberOfCandidat</th>
                         <th>NameOfCandidat</th>
+                        <th>NumberOfCandidat</th>
+                        <th>NumberOfVote</th>
                     </tr>
                     <tr>
                         <td>Félix Tshisekedi</td>
                         <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>Antoine Kizenga</td>
+                        <td>Joseph Kabila</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Delly Sesanga</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Jean Pierre Bemba</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Fayulu</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                 </table>

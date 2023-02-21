@@ -56,3 +56,21 @@ select {
     border-radius: 5px 5px;
     border: 1px solid lightblue;
 }
+
+.btn-arrière {
+    padding: 20px;
+    margin-left: 50px;
+    color: #ff0000;
+}
+
+.btn-arrière  i {
+    color: #ff0000;
+    gap: 2rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #fadada;
+    width: 90%;
+    margin-left: 50px;
+}

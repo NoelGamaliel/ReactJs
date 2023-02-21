@@ -35,11 +35,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/main_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <title>Login_form</title>
 </head>
 <body>
+        <div  class="btn-arrière">
+            <a href="index.php"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <hr>
     <main class="container_fluid">
+
+        <br>
         <div class="container_formulaire">
             <form action="./login_main.php" method="post">
                 <label for="firstname">FirtName :</label>
