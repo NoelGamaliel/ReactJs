@@ -1,12 +1,12 @@
 <?php
     // creation the variable for data based ;
     $servername = "localhost";
-    $mybdd = "vote";
+    $mybdd = "election";
     $username = "root";
     $password= "";
 
     try {
-        $conn =  new PDO("mysql:host=$servername;dbname=vote", $username, $password); // code for confirm the connection of data based ;
+        $conn =  new PDO("mysql:host=$servername;dbname=election", $username, $password); // code for confirm the connection of data based ;
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // echo "Connected successfully";

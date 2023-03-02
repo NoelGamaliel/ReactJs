@@ -1,4 +1,7 @@
-
+<?php
+    // connect of the databases ;
+    include_once "main_traitement_bdd.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +14,13 @@
         <title>Test POO</title>
     </head>
     <body>
+        <?php
+             // select all data from table ;
+            $sql = "SELECT * FROM vote_electeur";
+            // execution the requet of the databases ;
+            $stmt = $conn->query($sql);
 
+        ?>
         <header>
             <div class="container_fluid">
                 <nav>
@@ -37,36 +46,10 @@
                 <br>
 
                 <table border="0.2">
-                    <tr>
-                        <th>NameOfCandidat</th>
-                        <th>NumberOfCandidat</th>
-                        <th>NumberOfVote</th>
-                    </tr>
-                    <tr>
-                        <td>Félix Tshisekedi</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Joseph Kabila</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Delly Sesanga</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Jean Pierre Bemba</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Fayulu</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
+                    <thead>
+                        <tr>name_candidat</tr>
+                        <tr>number_candidat</tr>
+                    </thead>
                 </table>
             </div>
 
