@@ -78,17 +78,33 @@ nav a:hover {
     display: none;
 }
 
-/* Tableau de Resultat */
-table {
-    width: 100%;
-    margin: auto;
-    border-collapse: collapse;
+/* card-group */
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 1rem;
+
+}
+.card-group-1 {
+    border: 1px solid #ff5100;
+    background-color: aqua;
+    row-gap: 15px;
+}
+.card-title h1 {
+    padding: 20px;
+}
+.card-content p {
+    padding: 20px;
 }
 
-th,td  {
-    letter-spacing: 1px;
-    padding: 5px;
-    border: 1px solid #ff5100;
+.card-group-1 .card-footer {
+    background-color: #ffffff;
+}
+
+.card-footer span {
+    padding: 10px;
+    text-align: center;
 }
 
 

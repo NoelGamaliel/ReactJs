@@ -14,13 +14,6 @@
         <title>Test POO</title>
     </head>
     <body>
-        <?php
-             // select all data from table ;
-            $sql = "SELECT * FROM vote_electeur";
-            // execution the requet of the databases ;
-            $stmt = $conn->query($sql);
-
-        ?>
         <header>
             <div class="container_fluid">
                 <nav>
@@ -38,21 +31,71 @@
         </header> 
         <main class="content">
             <div class="container_fluid">
-                <h1>BIENVENUE DANS LA PAGE DE RESULTAT</h1>
-                <hr>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni omnis blanditiis sint doloremque in placeat accusamus, deleniti sunt, quod saepe eligendi aperiam eos modi eaque voluptate assumenda voluptates labore id odio a rem aspernatur. Aliquid consectetur rerum dicta dignissimos eum illum maxime perspiciatis eius laudantium magni ipsa expedita cupiditate eveniet possimus ad, harum omnis excepturi? Voluptatibus.</p>                
 
-                <br>
+                <div class="card-group">
+                    <div class="card-group-1">
+                        <div class="card-title">
+                            <h1>ANTOINE</h1>
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ab, minima eum perspiciatis saepe! Quia, quod. Dolorem ad deleniti quod possimus voluptatem.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span>N° 1</span>
+                        </div>                       
+                    </div>
 
-                <table border="0.2">
-                    <thead>
-                        <tr>name_candidat</tr>
-                        <tr>number_candidat</tr>
-                    </thead>
-                </table>
+                    <div class="card-group-1">
+                        <div class="card-title">
+                            <h1>GIZENGA</h1>
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ab, minima eum perspiciatis saepe! Quia, quod. Dolorem ad deleniti quod possimus voluptatem.</p>
+                        </div> 
+                        <div class="card-footer">
+                            <span>N° 2</span>
+                        </div>                         
+                    </div>
+
+                    <div class="card-group-1">
+                        <div class="card-title">
+                            <h1>BEMBA</h1>
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ab, minima eum perspiciatis saepe! Quia, quod. Dolorem ad deleniti quod possimus voluptatem.</p>
+                        </div> 
+                        <div class="card-footer">
+                            <span>N° 3</span>
+                        </div>                         
+                    </div>
+                    <div class="card-group-1">
+                        <div class="card-title">
+                            <h1>KABEYA</h1>
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum ab, minima eum perspiciatis saepe! Quia, quod. Dolorem ad deleniti quod possimus voluptatem.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span>N° 4</span>
+                        </div>                          
+                    </div>
+                </div>
+
+
+                <?php 
+                    $sql = "SELECT name_candidat, count(*) FROM vote_electeur GROUP BY name_candidat";
+                    $stmt = $conn->query($sql);
+
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+
+                    echo $row["name_candidat"].' '. $row["count(*)"]. '</br>';
+                ?>
+
             </div>
-
         </main>
 
         <?php
